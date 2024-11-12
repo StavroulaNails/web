@@ -56,14 +56,14 @@
     z-index: 2;
   }
   
-  .text-overlay h1 h2 {
+  .text-overlay h1, h2 {
     color: #fff;
     font-style: bold;
     font-size: 50px;
     text-shadow: 0 0 20px black;
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
-  
+
   .text-overlay p {
     padding: 15px;
     font-size: 25px;
