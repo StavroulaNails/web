@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="app2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <img src="1616.jpg" alt="" class="hero-img">
+  <section class="heropage">
+    <div class="text-overlay">
+      <h1>Nails</h1>
+      <h3>by<h3>
+        <h1>Stavroula</h1></h1>
+      <p>Enjoy the best experience</p>
+      <a href="page2.html">Book an appointment</a>
+    </div>
+  </section>
+  <section class="par1">
+    <div class="container">
+      <div class="text-content">
+        <h2 id="About">καλωσορίσατε</h2>
+        <p>Καλωσορίσατε στο Nails by Stavroula ...</p>
+      </div>
+      <img src="crepe3.jpg" alt="" class="side-image">
+    </div>
+  </section>
+  <section class="par3">
+    <div class="container3">
+      <div class="text-content3">
+        <h2 id="cont">Contacts</h2>
+        <a href="https://www.instagram.com/constantinos_koum/"><i2 class="icons fa-brands fa-instagram icon-cont"></i2></a>
+        <a href="mailto:const09kk@gmail.com"><i2 class="icons i2 fa-solid fa-envelope icon-cont"></i2></a>
+        <a href="tel: +357 97636854"><i2 class='fas fa-phone icon-cont' style="font-size: 32px;"></i2></a>
+      </div>
+    </div>
+  </section>
+  <script>
+    function handleResize() {
+      if (window.innerWidth <= 550) {
+        document.querySelector('.par1').innerHTML = `
+          <div class="container">
+            <div class="text-content">
+              <h2>Κλείσε εύκολα και γρήγορα ραντεβού!</h2>
+              <p>Μέσω της ιστοσελίδας μας, μπορείτε να κλείσετε εύκολα και γρήγορα το ραντεβού χωρίς τηλεφωνική επαφή! Πήγαινε στο πάνω μέρος της ιστοσελίδας, πατήστε το κουμπί "book an appointment" και θα δείτε τις διαθέσιμες μέρες και ώρες. Μετά την επιλογή σας, θα σας σταλεί mail επιβεβαίωσης στον προσωπικό σας λογαριασμό. Ευχαριστούμε!</p>
+              <img src="1717.jpg" alt="Description of image" class="side-image">
+            </div>
+          </div>
+        `;
+      } else {
+        document.querySelector('.par1').innerHTML = `
+          <div class="container">
+            <div class="text-content">
+              <h2 id="About">Κλείσε εύκολα και γρήγορα ραντεβού!</h2>
+              <p>Μέσω της ιστοσελίδας μας, μπορείτε να κλείσετε εύκολα και γρήγορα το ραντεβού χωρίς τηλεφωνική επαφή! Πήγαινε στο πάνω μέρος της ιστοσελίδας, πατήστε το κουμπί "book an appointment" και θα δείτε τις διαθέσιμες μέρες και ώρες. Μετά την επιλογή σας, θα σας σταλεί mail επιβεβαίωσης στον προσωπικό σας λογαριασμό. Ευχαριστούμε!</p>
+            </div>
+            <img src="1717.jpg" alt="Description of image" class="side-image">
+          </div>
+        `;
+      }
+    }
+
+    window.addEventListener('resize', handleResize);
+    document.addEventListener('DOMContentLoaded', handleResize);
+  </script>
+</body>
+</html>
