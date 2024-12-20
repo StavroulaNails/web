@@ -217,6 +217,13 @@
             align-items: normal;
             display: flex;
             
+            height: 450px;
+            
+        }
+        body .container2 {
+            align-items: normal;
+            display: flex;
+            
             height: 470px;
             
         }
