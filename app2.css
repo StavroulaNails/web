@@ -97,10 +97,6 @@
   .container {
     display: flex;
     align-items: flex-start; /* Align items at the top */
-    background-color: #fff;
-    border: 1px solid #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px;
 }
 .side-image {
     align-self: auto;
@@ -144,9 +140,6 @@
         display: flex;
         flex-direction: column;
         align-items: center; /* Center all children horizontally */
-        background-color: #fff;
-        border: 1px solid #ffffff;
-        border-radius: 8px;
         margin-left: 10px;
         padding: 20px; /* Add some padding for spacing */
       }
