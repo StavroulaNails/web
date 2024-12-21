@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+  }
+  
+  img {
+    width: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: scroll; /* Enable scrolling */
+    width: 100%;
+    height: 100%;
+    background-color: #e4d8d8a1;
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  
+  .hero-img {
+    display: flex;
+    position: absolute;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: 1;
+    border-radius: 5px;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .heropage {
+    width: 100%;
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 2;
+  }
+  
+  .text-overlay h1 {
+    color: #fff;
+    font-style: bold;
+    font-size: 50px;
+    text-shadow: 0 0 20px black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  .text-overlay p {
+    padding: 15px;
+    font-size: 25px;
+    color: #ffffff; /* Adjust as necessary */
+    text-shadow: 0 0 20px black;
+    /* Make sure the text is above the video */
+  }
+  
+  .heropage a {
+    font-size: 20px;
+    color: #ffffff; 
+    text-decoration: none;
+    background-color: #1e90ff;
+    width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  body .container {
+    margin-top: 15%;
+    margin: 0;
+    margin-top: 15%;
+    padding: 0;
+    display: flex;
+    margin-left: 2%;
+    margin-right: 2%;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    height: 250px;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    background-color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px;
+}
+.side-image {
+    align-self: auto;
+      display: flex;
+      width: 17%; /* Adjust the size as needed */
+      margin-right: 10px;
+      margin-left: 20px;/* Space between text and image */
+      border-radius: 8px;
+    }
+    
+    .text-content {
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: justify;
+    }
+    
+   .text-content h2 {
+      margin-top: 0; /* Remove top margin for better alignment */
+    }
+    
+    .text-content p {
+    line-height: 1.0;
+    font-size: 20px; /* Ensure matching font size */
+    }
+    body .container2 {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      margin-top: 15%;
+      padding: 0;
+      display: flex;
+      margin-left: 2%;
+      margin-right: 2%;
+      height: 480px;
+      background-color: #ffffff;
+     line-height: 1.6;
+    }
+    
+    .container2 {
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center all children horizontally */
+        background-color: #fff;
+        border: 1px solid #ffffff;
+        border-radius: 8px;
+        margin-left: 10px;
+        padding: 20px; /* Add some padding for spacing */
+      }
+      
+      .container2 h1 {
+        padding-top: 25px;
+        text-align: center;
+      }
+      .container2 h3{
+        padding-left: 1%;
+      }
+      .container2 ul{
+        padding-left: 1%;
+      }
+      .container2 li{
+        padding-left: 1%;
+      }
+      .container2 ul {
+        list-style: none; /* Remove default bullets */
+      }
+      hr{
+        color: black;
+      }
+      .container2 li {
+        margin-bottom: 5px; /* Add spacing between list items */
+      }
+      .container2 ul li {
+        line-height: 1.0;
+        font-size: 20px; /* Same as .text-content p */
+        font-family: Arial, sans-serif;
+    }
+      .text-content2 {
+        width: 100%; /* Ensure the text content spans full width */
+      }
+
+    body .container3 {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      margin-top: 15%;
+      padding: 0;
+      display: flex;
+      margin-left: 2%;
+      margin-right: 2%;
+      
+      height: 200px;
+    
+      justify-content: center;
+    }
+    
+    .container3 {
+      
+      display: flex;
+      align-items: flex-start; /* Align items at the top */
+    
+      border-radius: 8px;
+    
+    }
+    
+    
+    
+    .text-content3 {
+      margin-left: 10px;
+      margin-right: 10px;
+      text-align: center;
+      
+    }
+    
+    .text-content3 h2 {
+      font-size: 35px;
+      margin-bottom: 10px; /* Remove top margin for better alignment */
+    }
+    .icon-cont{
+      color: black;
+      font-size: 35px;
+      padding: 0 10px;
+      cursor: pointer;
+    }
+    @media (max-width: 450px){
+        
+        body .container {
+            align-items: normal;
+            display: flex;
+            
+            height: 450px;
+            
+        }
+        body .container2 {
+            height: 470px;
+            
+        }
+        .side-image{
+            margin-top: 13px;
+            width: 40%;
+            margin-left: 30%;
+        }
+      
+        .text-content{
+            text-align: center;
+            
+        }
+        .text-content h2{
+            margin-top: 25px;
+            position: relative;
+            font-size: 25px;
+            
+        }
+        .text-content p{
+            font-size: 20px;
+        }
+    }
