@@ -142,7 +142,6 @@
     
     .container2 {
         width: 100%;
-    padding: 20px;
       background-color: #fff;
       border: 1px solid #ffffff;
       border-radius: 8px;
@@ -152,6 +151,7 @@
     
     
     .text-content2 h1 {
+        
       text-align: center;
       
     }
