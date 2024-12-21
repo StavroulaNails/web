@@ -92,7 +92,6 @@
     align-items: center;
     font-family: Arial, sans-serif;
     height: 250px;
-    background-color: #ffffff;
   }
   
   .container {
@@ -137,7 +136,6 @@
       margin-left: 2%;
       margin-right: 2%;
       height: 510px;
-      background-color: #ffffff;
      line-height: 1.6;
     }
     
