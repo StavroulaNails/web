@@ -109,7 +109,9 @@
       width: 17%; /* Adjust the size as needed */
       margin-right: 10px;
       margin-left: 20px;/* Space between text and image */
-      border-radius: 8px;
+      border-radius: 8px
+
+    
     }
     
     .text-content {
@@ -224,21 +226,21 @@
       padding: 0 10px;
       cursor: pointer;
     }
-    @media (max-width: 450px){
+    @media (max-width: 480px){
         
         body .container {
             align-items: normal;
             display: flex;
             
-            height: 450px;
+            height: 440px;
             
         }
         body .container2 {
-            height: 470px;
+            height: 520px;
             
         }
         .side-image{
-            margin-top: 13px;
+            margin-top: 20px;
             width: 40%;
             margin-left: 30%;
         }
