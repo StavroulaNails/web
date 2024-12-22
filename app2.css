@@ -221,7 +221,7 @@ body .container3 {
     body .container {
         align-items: normal;
         display: flex;
-        height: 380px;
+        height: auto;
     }
 
     body .container2 {
