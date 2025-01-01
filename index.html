@@ -1,20 +1,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Stavroula Nails</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="app2.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <!--nav menu-->
+  <header class="header">
+    <div class="nav-container">
+        <div class="nav-left">
+          <div class="logo">Stavroula Nails</div>
+            <button class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+        <nav class="navigation">
+            <ul class="nav-menu">
+                <li><a href="#About" class="nav-link">About</a></li>
+                <li><a href="#serv" class="nav-link">Services</a></li>
+                <li><a href="#ora" class="nav-link">Hours</a></li>
+                <li><a href="#cont" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<script>
+const hamburger = document.querySelector('.hamburger-menu');
+const navigation = document.querySelector('.navigation');
+const navLinks = document.querySelectorAll('.nav-link');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    navigation.classList.toggle('active');
+});
+
+navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navigation.classList.remove('active');
+    });
+});
+</script>
+  <!--close-->
   <img src="1616.jpg" alt="" class="hero-img">
   <section class="heropage">
     <div class="text-overlay">
       <h1 class = "title">Stavroula</h1>
       <h1 class = "title">Nails</h1>
         <br>
-        <a href = "tel: +357 99912138">Call Us</a>
+        <a href = "tel: +357 99912138">Book Now</a>
         <br>
       <p>Enjoy the best experience</p>
      
@@ -23,14 +64,14 @@
   <section class="par1">
     <div class="container">
       <div class="text-content">
-        <h2 id="About">Καλωσορίσατε στο Stavroula Nails!/h2>
+        <h2 id="About">Καλωσορίσατε στο Nails by Stavroula!/h2>
         <p>Προσφέρουμε περιποίηση νυχιών με φροντίδα και επαγγελματισμό. Κλείστε το ραντεβού σας εύκολα, καλώντας μας στο <a  href="tel: +357 99912138" class="tel-btn">99912138</a>. Σας περιμένουμε!</p>
       </div>
       <img src="crepe3.jpg" alt="" class="side-image">
     </div>
   </section>
   <section class="par2">
-    <div class="container2">
+    <div id="serv" class="container2">
       <div class="text-content2">
         <h1>Οι Υπηρεσίες μας</h1>
     <h2>Νύχια</h2>
@@ -61,11 +102,71 @@
         </div>
       </div>
   </section>
+</section>
+<section class="working-hours">
+  <div id="ora" class="hours-container">
+    <div class="hours-content">
+      <h2>Ωράριο Λειτουργίας</h2>
+      <div class="sparkle-divider">
+        <i class="fas fa-sparkles"></i>
+        <span class="line"></span>
+        <i class="fas fa-gem"></i>
+        <span class="line"></span>
+        <i class="fas fa-sparkles"></i>
+      </div>
+      <div class="schedule">
+        <div class="schedule-item">
+          <div class="day-wrapper">
+            <span class="day">Δευτέρα</span>
+          </div>
+          <span class="time">09:00 - 19:00</span>
+        </div>
+        <div class="schedule-item">
+          <div class="day-wrapper">
+            <span class="day">Τρίτη</span>
+          </div>
+          <span class="time">Κλειστά</span>
+        </div>
+        <div class="schedule-item">
+          <div class="day-wrapper">
+            <span class="day">Τετάρτη</span>
+          </div>
+          <span class="time">09:00 - 19:00</span>
+        </div>
+        <div class="schedule-item">
+          <div class="day-wrapper">
+            <span class="day">Πέμπτη</span>
+          </div>
+          <span class="time">09:00 - 19:00</span>
+        </div>
+        <div class="schedule-item">
+          <div class="day-wrapper">
+            <span class="day">Παρασκευή</span>
+          </div>
+          <span class="time">09:00 - 19:00</span>
+        </div>
+        <div class="schedule-item">
+          <div class="day-wrapper">
+            <span class="day">Σάββατο</span>
+          </div>
+          <span class="time">Κλειστά</span>
+        </div>
+        <div class="schedule-item">
+          <div class="day-wrapper">
+            <span class="day">Κυριακή</span>
+          </div>
+          <span class="time">Κλειστά</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   <section class="par3">
     <div class="container3">
       <div class="text-content3">
-        <h2 id="cont">Contacts</h2>
-        <a href="https://www.instagram.com/stavroula.nails?igsh=cHNjMmRyYWQ2dXVq"><i2 class="icons fa-brands fa-instagram icon-cont"></i2></a>
+        <h2 id="cont">Που μπορείτε να μας βρείτε</h2>
+        <a href="https://www.instagram.com/constantinos_koum/"><i2 class="icons fa-brands fa-instagram icon-cont"></i2></a>
         <a href="https://www.facebook.com/stavroula.nails.7"><i class="fa-brands fa-square-facebook icon-cont"></i></a>
         <a href="tel: +357 99912138"><i2 class='fas fa-phone icon-cont ' style="font-size: 32px;"></i2></a>
       </div>
@@ -77,7 +178,7 @@
         document.querySelector('.par1').innerHTML = `
           <div class="container">
             <div class="text-content">
-              <h2>Καλωσορίσατε στο Stavroula Nails</h2>
+              <h2>Καλωσορίσατε στο Nails by Stavroula!</h2>
               <p>Προσφέρουμε περιποίηση νυχιών με φροντίδα και επαγγελματισμό. Κλείστε το ραντεβού σας εύκολα, καλώντας μας στο <a  href="tel: +357 99912138" class="tel-btn">99912138</a>. Σας περιμένουμε!</p>
               <img src="1717.jpg" alt="Description of image" class="side-image">
             </div>
@@ -87,7 +188,7 @@
         document.querySelector('.par1').innerHTML = `
           <div class="container">
             <div class="text-content">
-              <h2 id="About">Καλωσορίσατε στο Stavroula Nails</h2>
+              <h2 id="About">Καλωσορίσατε στο Nails by Stavroula</h2>
               <p>Προσφέρουμε περιποίηση νυχιών με φροντίδα και επαγγελματισμό. Κλείστε το ραντεβού σας εύκολα, καλώντας μας στο <a  href="tel: +357 99912138" class="tel-btn">99912138</a>. Σας περιμένουμε!</p>
             </div>
             <img src="1717.jpg" alt="Description of image" class="side-image">
@@ -100,4 +201,5 @@
     document.addEventListener('DOMContentLoaded', handleResize);
   </script>
 </body>
+<script src="script.js"></script>
 </html>
