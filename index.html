@@ -175,42 +175,7 @@ navLinks.forEach(link => {
       </div>
     </div>
   </section>
-  <script>
-    function handleResize() {
-      if (window.innerWidth <= 550) {
-        document.querySelector('.par1').innerHTML = `
-          <section class="par1">
-    <div id="about"class="container">
-      <div class="text-content">
-        <h2 >Καλωσορίσατε στο Stavroula Nails!</h2>
-        <p>Καλώς ήρθατε Stavroula Nails. Εδώ φροντίζουμε τα νύχια και τις βλεφαρίδες σας, με αγάπη και προσοχή στη λεπτομέρεια. 
-          Στόχος μας είναι να σας κάνουμε να νιώθετε όμορφα και ξεχωριστά κάθε φορά που μας επισκέπτεστε. Σας περιμένουμε για να σας 
-          περιποιηθούμε σε ένα φιλικό και ζεστό περιβάλλον!</p>
-          <img src="1717.jpg" alt="" class="side-image">
-      </div>
-    </div>
-  </section>
-        `;
-      } else {
-        document.querySelector('.par1').innerHTML = `
-          <section class="par1">
-    <div id="about"class="container">
-      <div class="text-content">
-        <h2 >Καλωσορίσατε στο Stavroula Nails!</h2>
-        <p>Καλώς ήρθατε στο Stavroula Nails. Εδώ φροντίζουμε τα νύχια και τις βλεφαρίδες σας, με αγάπη και προσοχή στη λεπτομέρεια. 
-          Στόχος μας είναι να σας κάνουμε να νιώθετε όμορφα και ξεχωριστά κάθε φορά που μας επισκέπτεστε. Σας περιμένουμε για να σας 
-          περιποιηθούμε σε ένα φιλικό και ζεστό περιβάλλον!</p>
-      </div>
-      <img src="1717.jpg" alt="" class="side-image">
-    </div>
-  </section>
-        `;
-      }
-    }
-
-    window.addEventListener('resize', handleResize);
-    document.addEventListener('DOMContentLoaded', handleResize);
-  </script>
+  
 </body>
 <script src="script.js"></script>
 </html>
