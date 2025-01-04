@@ -13,7 +13,7 @@
   <header class="header">
     <div class="nav-container">
         <div class="nav-left">
-          <div class="logo">Stavroula Nails</div>
+          <a href="#hero"><div class="logo">Stavroula Nails</div></a>
             <button class="hamburger-menu">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -22,10 +22,10 @@
         </div>
         <nav class="navigation">
             <ul class="nav-menu">
-                <li><a href="#About" class="nav-link">About</a></li>
-                <li><a href="#serv" class="nav-link">Services</a></li>
-                <li><a href="#ora" class="nav-link">Hours</a></li>
-                <li><a href="#cont" class="nav-link">Contact</a></li>
+                <li><a href="#about" class="nav-link">Σχετικά</a></li>
+                <li><a href="#serv" class="nav-link">Υπηρεσίες</a></li>
+                <li><a href="#ora" class="nav-link">Ώρες</a></li>
+                <li><a href="#cont" class="nav-link">Επικοινωνίες</a></li>
             </ul>
         </nav>
     </div>
@@ -50,22 +50,24 @@ navLinks.forEach(link => {
 </script>
   <!--close-->
   <img src="1616.jpg" alt="" class="hero-img">
-  <section class="heropage">
+  <section class="heropage" id="hero">
     <div class="text-overlay">
       <h1 class = "title">Stavroula</h1>
       <h1 class = "title">Nails</h1>
         <br>
-        <a href = "tel: +357 99912138">Book Now</a>
+        <a href = "tel: +357 99912138">Call us</a>
         <br>
-      <p>Enjoy the best experience</p>
+      <p>Ζήστε την απόλυτη εμπειρία ομορφιάς</p>
      
     </div>
   </section>
   <section class="par1">
-    <div class="container">
+    <div id="about"class="container">
       <div class="text-content">
-        <h2 id="About">Καλωσορίσατε στο Nails by Stavroula!/h2>
-        <p>Προσφέρουμε περιποίηση νυχιών με φροντίδα και επαγγελματισμό. Κλείστε το ραντεβού σας εύκολα, καλώντας μας στο <a  href="tel: +357 99912138" class="tel-btn">99912138</a>. Σας περιμένουμε!</p>
+        <h2 >Καλωσορίσατε στο Stavroula Nails!</h2>
+        <p>Καλώς ήρθατε στο Stavroula Nails. Εδώ φροντίζουμε τα νύχια και τις βλεφαρίδες σας, με αγάπη και προσοχή στη λεπτομέρεια. 
+          Στόχος μας είναι να σας κάνουμε να νιώθετε όμορφα και ξεχωριστά κάθε φορά που μας επισκέπτεστε. Σας περιμένουμε για να σας 
+          περιποιηθούμε σε ένα φιλικό και ζεστό περιβάλλον!</p>
       </div>
       <img src="crepe3.jpg" alt="" class="side-image">
     </div>
@@ -166,9 +168,10 @@ navLinks.forEach(link => {
     <div class="container3">
       <div class="text-content3">
         <h2 id="cont">Που μπορείτε να μας βρείτε</h2>
-        <a href="https://www.instagram.com/constantinos_koum/"><i2 class="icons fa-brands fa-instagram icon-cont"></i2></a>
-        <a href="https://www.facebook.com/stavroula.nails.7"><i class="fa-brands fa-square-facebook icon-cont"></i></a>
-        <a href="tel: +357 99912138"><i2 class='fas fa-phone icon-cont ' style="font-size: 32px;"></i2></a>
+        <a href="https://www.instagram.com/stavroula.nails?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i2 class="icons fa-brands fa-instagram icon-cont"></i2></a>
+        <a href="https://www.facebook.com/stavroula.nails.7" target="_blank"><i class="fa-brands fa-square-facebook icon-cont"></i></a>
+        <a href="tel: +357 99912138"><i2 class='fas fa-phone icon-cont '></i2></a>
+        <a href="https://maps.app.goo.gl/m9BAhWUTTu3i4yxv7" target="_blank"><i class="fa-solid fa-location-dot icon-cont"></i></a>
       </div>
     </div>
   </section>
@@ -176,23 +179,31 @@ navLinks.forEach(link => {
     function handleResize() {
       if (window.innerWidth <= 550) {
         document.querySelector('.par1').innerHTML = `
-          <div class="container">
-            <div class="text-content">
-              <h2>Καλωσορίσατε στο Nails by Stavroula!</h2>
-              <p>Προσφέρουμε περιποίηση νυχιών με φροντίδα και επαγγελματισμό. Κλείστε το ραντεβού σας εύκολα, καλώντας μας στο <a  href="tel: +357 99912138" class="tel-btn">99912138</a>. Σας περιμένουμε!</p>
-              <img src="1717.jpg" alt="Description of image" class="side-image">
-            </div>
-          </div>
+          <section class="par1">
+    <div id="about"class="container">
+      <div class="text-content">
+        <h2 >Καλωσορίσατε στο Stavroula Nails!</h2>
+        <p>Καλώς ήρθατε Stavroula Nails. Εδώ φροντίζουμε τα νύχια και τις βλεφαρίδες σας, με αγάπη και προσοχή στη λεπτομέρεια. 
+          Στόχος μας είναι να σας κάνουμε να νιώθετε όμορφα και ξεχωριστά κάθε φορά που μας επισκέπτεστε. Σας περιμένουμε για να σας 
+          περιποιηθούμε σε ένα φιλικό και ζεστό περιβάλλον!</p>
+      </div>
+      <img src="crepe3.jpg" alt="" class="side-image">
+    </div>
+  </section>
         `;
       } else {
         document.querySelector('.par1').innerHTML = `
-          <div class="container">
-            <div class="text-content">
-              <h2 id="About">Καλωσορίσατε στο Nails by Stavroula</h2>
-              <p>Προσφέρουμε περιποίηση νυχιών με φροντίδα και επαγγελματισμό. Κλείστε το ραντεβού σας εύκολα, καλώντας μας στο <a  href="tel: +357 99912138" class="tel-btn">99912138</a>. Σας περιμένουμε!</p>
-            </div>
-            <img src="1717.jpg" alt="Description of image" class="side-image">
-          </div>
+          <section class="par1">
+    <div id="about"class="container">
+      <div class="text-content">
+        <h2 >Καλωσορίσατε στο Stavroula Nails!</h2>
+        <p>Καλώς ήρθατε στο Stavroula Nails. Εδώ φροντίζουμε τα νύχια και τις βλεφαρίδες σας, με αγάπη και προσοχή στη λεπτομέρεια. 
+          Στόχος μας είναι να σας κάνουμε να νιώθετε όμορφα και ξεχωριστά κάθε φορά που μας επισκέπτεστε. Σας περιμένουμε για να σας 
+          περιποιηθούμε σε ένα φιλικό και ζεστό περιβάλλον!</p>
+      </div>
+      <img src="crepe3.jpg" alt="" class="side-image">
+    </div>
+  </section>
         `;
       }
     }
